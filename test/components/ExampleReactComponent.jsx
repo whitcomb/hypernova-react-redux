@@ -1,12 +1,12 @@
-const React = require('react');
+import React from 'react';
 
 function ExampleReactComponent(props) {
   const name = ['Hello', props.name];
-  return React.createElement('div', { id: 'example' }, name.join(' '));
+  return <div id="example">{name.join(' ')}</div>;
 }
 
 ExampleReactComponent.propTypes = {
   name: React.PropTypes.string,
 };
 
-module.exports = ExampleReactComponent;
+export default ExampleReactComponent;
