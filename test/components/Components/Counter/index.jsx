@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 
-function Counter(props) {
+function CounterComponent(props) {
   const { count, onIncrement, onDecrement } = props;
   return (
     <div>
@@ -11,10 +11,10 @@ function Counter(props) {
   );
 }
 
-Counter.propTypes = {
+CounterComponent.propTypes = {
   count: PropTypes.number.isRequired,
   onIncrement: PropTypes.func.isRequired,
   onDecrement: PropTypes.func.isRequired,
 };
 
-export default Counter;
+export default CounterComponent;
