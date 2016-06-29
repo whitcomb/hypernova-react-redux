@@ -1,4 +1,4 @@
-import * as types from '../constants/ActionTypes';
+import * as types from '../../Constants/ActionTypes/Counter';
 
 export function incrementCounter() {
   return { type: types.INCREMENT_COUNTER };
