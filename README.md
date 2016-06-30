@@ -2,7 +2,7 @@
 
 > [React](https://github.com/facebook/react)/[Redux](https://github.com/reactjs/redux) ([react-redux](https://github.com/reactjs/react-redux)) bindings for [Hypernova](https://github.com/airbnb/hypernova).
 
-[![NPM version](https://badge.fury.io/js/hypernova-react-redux.svg)](http://badge.fury.io/js/hypernova-react-redux)
+[![NPM version](https://img.shields.io/npm/v/hypernova-react-redux.svg?style=flat-square)](https://badge.fury.io/js/hypernova-react-redux)
 [![Build Status](https://img.shields.io/travis/noriaki/hypernova-react-redux.svg?style=flat-square)](https://travis-ci.org/noriaki/hypernova-react-redux)
 [![PeerDependency Status](https://img.shields.io/david/peer/noriaki/hypernova-react-redux.svg?style=flat-square)](https://david-dm.org/noriaki/hypernova-react-redux)
 [![DevDependency Status](https://img.shields.io/david/dev/noriaki/hypernova-react-redux.svg?style=flat-square)](https://david-dm.org/noriaki/hypernova-react-redux)
@@ -32,6 +32,11 @@ export default renderReactRedux(
   myConfigureStore
 );
 ```
+
+## Todo
+
+- [ ] To handle the multiple of the connected components
+
 ## Contribution
 
 1. Fork it ( http://github.com/noriaki/hypernova-react-redux/fork )
