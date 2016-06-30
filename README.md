@@ -26,7 +26,7 @@ import { renderReactRedux } from 'hypernova-react-redux';
 import MyConnectedComponent from './src/MyConnectedComponent.jsx';
 import myConfigureStore from './src/MyStore/ConfigureStore.jsx';
 
-export default renderReact(
+export default renderReactRedux(
   'MyConnectedComponent.hypernova.js', // this file's name (or really any unique name)
   MyConnectedComponent,
   myConfigureStore

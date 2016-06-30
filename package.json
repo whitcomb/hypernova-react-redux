@@ -1,7 +1,7 @@
 {
-  "name": "hypernova-redux",
+  "name": "hypernova-react-redux",
   "version": "1.0.0",
-  "description": "Redux bindings for Hypernova",
+  "description": "React/Redux (react-redux) bindings for Hypernova",
   "main": "lib/index.js",
   "scripts": {
     "prepublish": "npm run build",
@@ -10,28 +10,35 @@
     "test": "npm run lint && npm run build && npm run test:coverage",
     "tests-only": "npm run build && npm run test:quick",
     "test:coverage": "babel-node node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- -R tap test/*-test.js",
-    "test:quick": "babel-node node_modules/.bin/_mocha -R tap test/*-test.js",
-    "test:quick:watch": "npm run test:quick -- --watch"
+    "test:quick": "babel-node node_modules/.bin/_mocha -R tap test/*-test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/noriaki/hypernova-redux.git"
+    "url": "git+https://github.com/noriaki/hypernova-react-redux.git"
   },
   "keywords": [
     "react",
     "redux",
+    "react-redux"
     "hypernova",
     "server",
     "render",
     "isomorphic",
     "universal"
   ],
+  "files": [
+    "README.md",
+    "lib",
+    "src",
+    "test",
+    ".eslintrc.json"
+  ],
   "author": "Noriaki Uchiyama <uchiyama.noriaki@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/noriaki/hypernova-redux/issues"
+    "url": "https://github.com/noriaki/hypernova-react-redux/issues"
   },
-  "homepage": "https://github.com/noriaki/hypernova-redux#readme",
+  "homepage": "https://github.com/noriaki/hypernova-react-redux#readme",
   "peerDependencies": {
     "hypernova": "^1.0.0",
     "react": "0.14.x || >= 15.x",
