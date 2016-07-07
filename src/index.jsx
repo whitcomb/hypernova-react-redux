@@ -7,7 +7,11 @@ import hypernova, { serialize, load } from 'hypernova';
 function buildProvider(connectedComponent, store) {
   return (
     <Provider store={store}>
-      {React.createElement(connectedComponent)}
+      {
+        React.isValidElement(connectedComponent)
+          ? connectedComponent
+          : React.createElement(connectedComponent)
+      }
     </Provider>
   );
 }

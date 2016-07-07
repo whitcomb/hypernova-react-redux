@@ -21,6 +21,8 @@ npm install hypernova-react-redux
 
 Here's how use use it in your module:
 
+### Single connected component
+
 ```js
 import { renderReactRedux } from 'hypernova-react-redux';
 import MyConnectedComponent from './src/MyConnectedComponent.jsx';
@@ -33,9 +35,28 @@ export default renderReactRedux(
 );
 ```
 
+### Multiple connected components
+
+```js
+import React from 'react';
+import { renderReactRedux } from 'hypernova-react-redux';
+import MyConnectedComponentA from './src/MyConnectedComponentA.jsx';
+import MyConnectedComponentB from './src/MyConnectedComponentB.jsx';
+import myConfigureStore from './src/MyStore/ConfigureStore.jsx';
+
+export default renderReactRedux(
+  'MyConnectedComponent.hypernova.js', // this file's name (or really any unique name)
+  <div>
+    <MyConnectedComponentA />
+    <MyConnectedComponentB />
+  </div>,
+  myConfigureStore
+);
+```
+
 ## Todo
 
-- [ ] To handle the multiple of the connected components
+- [x] To handle the multiple of the connected components
 
 ## Contribution
 
