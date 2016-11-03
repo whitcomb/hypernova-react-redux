@@ -27,13 +27,14 @@ export const renderReactRedux =
     },
 
     client() {
-      const { node, data } = load(name);
-
-      if (node) {
-        const provider = buildProvider(connectedComponent, configureStore(data));
-        ReactDOM.render(provider, node);
+      const payloads = load(name);
+      if (payloads) {
+        payloads.forEach((payload) => {
+          const { node, data } = payload;
+          const provider = buildProvider(connectedComponent, configureStore(data));
+          ReactDOM.render(provider, node);
+        });
       }
-
       return connectedComponent;
-    },
+    }
   });
